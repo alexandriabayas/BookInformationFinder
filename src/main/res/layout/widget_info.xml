@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7BFFF">
+
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDA1FF"
+        android:fontFamily="@font/comicsans"
+        android:text="Title:"
+        android:textColor="#010203"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDA1FF"
+        android:fontFamily="@font/comicsans"
+        android:text="Author:"
+        android:textColor="#010203"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_title" />
+
+    <TextView
+        android:id="@+id/id_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDA1FF"
+        android:fontFamily="@font/comicsans"
+        android:text="Genre:"
+        android:textColor="#010203"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_author" />
+
+    <TextView
+        android:id="@+id/id_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comicsans"
+        android:text="Description"
+        android:textColor="#010203"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_genre" />
+
+    <Button
+        android:id="@+id/id_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFE39B"
+        android:fontFamily="@font/comicsans"
+        android:text="New Search"
+        android:textColor="#010203"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

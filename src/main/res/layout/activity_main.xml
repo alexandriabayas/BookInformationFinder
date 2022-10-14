@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7BFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/id_buttonSearch"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:background="#FFE39B"
+        android:fontFamily="@font/comicsans"
+        android:text=" Text Search"
+        app:layout_constraintEnd_toStartOf="@+id/id_buttonImageSearch"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/id_editTextBook"
+        app:layout_constraintTop_toBottomOf="@+id/id_editTextBook" />
+
+    <EditText
+        android:id="@+id/id_editTextBook"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/comicsans"
+        android:inputType="textNoSuggestions"
+        android:text="Book Title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/id_buttonImageSearch"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:background="#FFE39B"
+        android:fontFamily="@font/comicsans"
+        android:text="Image Search"
+        app:layout_constraintBottom_toBottomOf="@+id/id_buttonSearch"
+        app:layout_constraintEnd_toEndOf="@+id/id_editTextBook"
+        app:layout_constraintTop_toBottomOf="@+id/id_editTextBook" />
+
+    <Button
+        android:id="@+id/id_buttonPrevious"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFE39B"
+        android:fontFamily="@font/comicsans"
+        android:text="See Previous Searches"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#FDA1FF"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="~ Book Finder ~"
+        android:textColor="#010203"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
